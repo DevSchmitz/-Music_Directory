@@ -1,0 +1,80 @@
+<!--
+    Файл: instruments.html
+    Опис: Сторінка з інформацією про музичні інструменти.   
+-->
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інструменти - Музичний Довідник</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🎵 MusicGuide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="terms.html">Терміни</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="instruments.html">Інструменти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Історія</a></li>
+                    <li class="nav-item"><a class="nav-link" href="genres.html">Жанри</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composers.html">Композитори</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+                <button class="btn btn-outline-light" id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Музичні Інструменти</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/violin.jpg" class="card-img-top" alt="Скрипка" style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Скрипка</h5>
+                        <p class="card-text">Струнний смичковий інструмент, королева оркестру.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/piano.jpg" class="card-img-top" alt="Фортепіано" style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Фортепіано</h5>
+                        <p class="card-text">Клавішний інструмент з широким діапазоном звучання.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/guitar.jpg" class="card-img-top" alt="Гітара" style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Гітара</h5>
+                        <p class="card-text">Популярний щипковий інструмент для різних жанрів.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Довідник. Всі права захищено</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

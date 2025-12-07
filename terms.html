@@ -1,0 +1,132 @@
+<!--
+    Файл: terms.html
+    Опис: Сторінка зі словником музичних термінів.
+-->
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Терміни - Музичний Довідник</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🎵 MusicGuide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="terms.html">Терміни</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instruments.html">Інструменти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Історія</a></li>
+                    <li class="nav-item"><a class="nav-link" href="genres.html">Жанри</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composers.html">Композитори</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+                <button class="btn btn-outline-light" id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="display-5 fw-bold">Словник термінів</h2>
+            <p class="text-muted">Введіть назву терміну для швидкого пошуку.</p>
+        </div>
+        
+        <div class="mb-4">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text bg-primary text-white" id="search-icon">🔍</span>
+                <input type="text" id="searchInput" class="form-control border-primary" placeholder="Пошук..." aria-describedby="search-icon">
+            </div>
+        </div>
+
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-striped table-hover align-middle mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 30%;">Термін</th>
+                        <th>Значення</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr><td class="term-text">Acciaccatura (Аччіакатура)</td><td>Коротка прикраса, відразу перед основним звуком.</td></tr>
+                <tr><td class="term-text">A cappella (А капела)</td><td>Вокальне виконання без інструментального супроводу.</td></tr>
+                <tr><td class="term-text">Allegretto (Алегретто)</td><td>Помірно швидкий темп, трохи повільніше Allegro.</td></tr>
+                <tr><td class="term-text">Animato (Анімато)</td><td>Жваво, з енергією.</td></tr>
+                <tr><td class="term-text">Cantabile (Кантатібле)</td><td>Співуче, мелодійно.</td></tr>
+                <tr><td class="term-text">Con brio (Кон бріо)</td><td>Жваво, енергійно.</td></tr>
+                <tr><td class="term-text">Con moto (Кон мото)</td><td>З рухом, не повільно.</td></tr>
+                <tr><td class="term-text">Dal segno (Даль сеньо)</td><td>Повторення музики від знаку Segno.</td></tr>
+                <tr><td class="term-text">Da capo (Да капо)</td><td>Повторити від початку.</td></tr>
+                <tr><td class="term-text">Diminuendo (Дімінуендо)</td><td>Поступове зменшення гучності.</td></tr>
+                <tr><td class="term-text">Espressivo (Еспресіво)</td><td>Виконувати виразно, емоційно.</td></tr>
+                <tr><td class="term-text">Fermata (Ферма́та)</td><td>Притримати звук довше звичайного.</td></tr>
+                <tr><td class="term-text">Glissando (Глісандо)</td><td>Скользяче виконання нот від однієї до іншої.</td></tr>
+                <tr><td class="term-text">Grave (Граве)</td><td>Повільно та урочисто.</td></tr>
+                <tr><td class="term-text">Maestoso (Маестозо)</td><td>Велично, урочисто.</td></tr>
+                <tr><td class="term-text">Marcato (Маркато)</td><td>Виділено, підкреслено.</td></tr>
+                <tr><td class="term-text">Meno mosso (Мено мозсо)</td><td>Менше руху, повільніше.</td></tr>
+                <tr><td class="term-text">Molto (Мольто)</td><td>Дуже (збільшує значення терміну, напр. Molto Allegro).</td></tr>
+                <tr><td class="term-text">Portamento (Портаменто)</td><td>Плавний перехід між нотами.</td></tr>
+                <tr><td class="term-text">Rallentando (Раллентандо)</td><td>Поступове сповільнення темпу.</td></tr>
+                <tr><td class="term-text">Sforzando (Сфорцандо)</td><td>Різко виділений акцент.</td></tr>
+                <tr><td class="term-text">Sostenuto (Состенуто)</td><td>Тримати звук, плавно.</td></tr>
+                <tr><td class="term-text">Tacet (Тачет)</td><td>Не грати в певних тактах.</td></tr>
+                <tr><td class="term-text">Tenuto (Тенуто)</td><td>Утримувати звук повністю.</td></tr>
+                <tr><td class="term-text">Vibrato (Вібрато)</td><td>Тремтіння або коливання звуку.</td></tr>
+                <tr><td class="term-text">Vivace (Віваче)</td><td>Жваво, швидко.</td></tr>
+                <tr><td class="term-text">Alla breve (Алла бреве)</td><td>Темп із двомірним розміром такту.</td></tr>
+                <tr><td class="term-text">Arco (Арко)</td><td>Грати смичком (для струнних).</td></tr>
+                <tr><td class="term-text">Col legno (Кол легно)</td><td>Грати деревом смичка по струнах.</td></tr>
+                <tr><td class="term-text">Colla voce (Колла воче)</td><td>Слідувати за голосом соліста.</td></tr>
+                <tr><td class="term-text">Con fuoco (Кон фуоко)</td><td>З вогнем, енергійно.</td></tr>
+                <tr><td class="term-text">Da capo al fine (Да капо аль фінє)</td><td>Повернутися на початок і грати до слова Fine.</td></tr>
+                <tr><td class="term-text">Divisi (Дівізі)</td><td>Розділення партії між музикантами.</td></tr>
+                <tr><td class="term-text">Energico (Енерджіко)</td><td>Енергійно, сильно.</td></tr>
+                <tr><td class="term-text">Espressione (Еспрессіоне)</td><td>Виконувати з виразом.</td></tr>
+                <tr><td class="term-text">Fermata breve (Ферма́та бреве)</td><td>Коротке затримання звуку.</td></tr>
+                <tr><td class="term-text">Giocoso (Джокозо)</td><td>Весело, жартівливо.</td></tr>
+                <tr><td class="term-text">Laissez vibrer (Лессез вібрер)</td><td>Дозволити звуку вібрувати вільно.</td></tr>
+                <tr><td class="term-text">Lento (Ленто)</td><td>Повільно.</td></tr>
+                <tr><td class="term-text">Leggiero (Леджеро)</td><td>Легко, ніжно.</td></tr>
+                <tr><td class="term-text">Marcatissimo (Маркатіссімо)</td><td>Ще сильніше виділено, ніж Marcato.</td></tr>
+                <tr><td class="term-text">Mezzo forte (Меццо форте)</td><td>Помірно голосно.</td></tr>
+                <tr><td class="term-text">Mezzo piano (Меццо піано)</td><td>Помірно тихо.</td></tr>
+                <tr><td class="term-text">Moderato con moto (Модерато кон мото)</td><td>Помірно, але з рухом.</td></tr>
+                <tr><td class="term-text">Morendo (Морендо)</td><td>Загасаючи, зменшуючи силу звуку.</td></tr>
+                <tr><td class="term-text">Obbligato (Облігато)</td><td>Обов’язково, виділена партія.</td></tr>
+                <tr><td class="term-text">Poco a poco (Поко а поко)</td><td>Поступово, мало-помалу.</td></tr>
+                <tr><td class="term-text">Primo (Прімо)</td><td>Перша частина твору або головна партія.</td></tr>
+                <tr><td class="term-text">Recitativo (Речитативо)</td><td>Розмовний стиль виконання, близький до мовлення.</td></tr>
+                <tr><td class="term-text">Ritardando (Рітардандо)</td><td>Поступове уповільнення темпу.</td></tr>
+                <tr><td class="term-text">Rubato (Рубато)</td><td>Вільне коливання темпу, з додаванням експресії.</td></tr>
+                <tr><td class="term-text">Segno (Сеньйо)</td><td>Музичний знак для повторення.</td></tr>
+                <tr><td class="term-text">Simile (Сіміле)</td><td>Продовжувати виконання в тому ж стилі.</td></tr>
+                <tr><td class="term-text">Senza (Сенца)</td><td>Без (напр. Senza vibrato — без вібрато).</td></tr>
+                <tr><td class="term-text">Sostenuto legato (Состенуто легато)</td><td>Тримати звуки плавно та рівномірно.</td></tr>
+                <tr><td class="term-text">Subito (Субіто)</td><td>Різко, негайно.</td></tr>
+                <tr><td class="term-text">Tremolo (Тремоло)</td><td>Швидке повторення одного звуку або акордового пасажу.</td></tr>
+                <tr><td class="term-text">Trill (Триль)</td><td>Швидка чергова гра двох сусідніх нот.</td></tr>
+                <tr><td class="term-text">Unisono (Унісоно)</td><td>Одночасне виконання однієї мелодії кількома голосами або інструментами.</td></tr>
+                <tr><td class="term-text">Vivo (Віво)</td><td>Жваво, швидко.</td></tr>
+                <tr><td class="term-text">Volti subito (Вольті субіто)</td><td>Швидко перевернути сторінку.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2025 Довідник. Всі права захищено.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

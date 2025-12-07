@@ -1,0 +1,137 @@
+<!--
+    Файл: gallery.html
+    Опис: Сторінка контактів з формою зворотного зв'язку.
+-->
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відеогалерея - Музичний Довідник</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🎵 MusicGuide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="terms.html">Терміни</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instruments.html">Інструменти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Історія</a></li>
+                    <li class="nav-item"><a class="nav-link" href="genres.html">Жанри</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composers.html">Композитори</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+                <button class="btn btn-outline-light" id="themeToggle">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Відеогалерея 🎥</h2>
+            <p class="text-muted">Послухайте та подивіться на шедеври світової музики.</p>
+        </div>
+
+        <div class="card shadow-sm mb-5 border-0">
+            <div class="card-body p-0">
+                <div id="videoCarousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/4Tr0otuiQuU?rel=0" title="Beethoven 9"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="bg-dark text-white p-3 text-center">
+                                <h5>Л. ван Бетховен — Симфонія №9</h5>
+                                <small>Фінал "Ода до радості" (Flash Mob версія).</small>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/NlprozGcs80?rel=0" title="Vivaldi Summer"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="bg-dark text-white p-3 text-center">
+                                <h5>А. Вівальді — "Літо" (Пори року)</h5>
+                                <small>Неймовірна віртуозність на скрипці.</small>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/r2S1I_ien6A?rel=0"
+                                    title="What a Wonderful World" allowfullscreen></iframe>
+                            </div>
+                            <div class="bg-dark text-white p-3 text-center">
+                                <h5>Луї Армстронг — What a Wonderful World</h5>
+                                <small>Класика джазу, що зігріває душу.</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+                        data-bs-slide="prev" style="width: 5%;">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Попередній</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
+                        data-bs-slide="next" style="width: 5%;">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Наступний</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mb-4 border-bottom pb-2">🎸 Живі виступи та кліпи</h3>
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/yk3prd8GER4?rel=0" title="Queen Live Aid"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Queen — Radio Ga Ga (Live Aid)</h5>
+                        <p class="card-text text-muted">Легендарний живий виступ гурту.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/9E6b3swbnWg?rel=0" title="Chopin Nocturne"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ф. Шопен — Ноктюрн Op. 9 No. 2</h5>
+                        <p class="card-text text-muted">Ніжна фортепіанна музика епохи романтизму.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">&copy; 2025 Довідник. Всі права захищено</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

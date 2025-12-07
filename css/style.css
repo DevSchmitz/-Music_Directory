@@ -1,0 +1,53 @@
+/* css/style.css */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Забезпечує, що футер завжди внизу сторінки */
+main {
+    flex: 1; 
+}
+/*  Стиль для карток з інформацією про композиторів та жанри  */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Стиль для зображень в картках */
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+/*  Ефект при наведенні на картку */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+/*  Стиль для навігаційної панелі  */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Стиль для активного посилання в меню */
+.nav-link.active {
+    border-bottom: 2px solid #ffc107;
+}
+
+/* Стиль для iframe (відео з ютуба), щоб воно було адаптивним */
+.ratio-16x9 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Стиль для фону на головній сторінці */
+.hero-bg {
+    background-color: #212529;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
