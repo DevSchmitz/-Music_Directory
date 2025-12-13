@@ -47,7 +47,7 @@ main {
 /* Стиль для фону на головній сторінці */
 .hero-bg {
     background-color: #212529;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6));
     background-size: cover;
     background-position: center;
 }
