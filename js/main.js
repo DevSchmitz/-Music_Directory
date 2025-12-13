@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {  // Чекаємо, пок
     }
 
     //2. ПОШУК ПО ТАБЛИЦІ
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchInput'); // Поле вводу для пошуку
     
     if (searchInput) {
         searchInput.addEventListener('keyup', (e) => {
