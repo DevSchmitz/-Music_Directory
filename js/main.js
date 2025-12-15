@@ -35,23 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {  // Чекаємо, пок
         console.error("Помилка: Кнопка з ID 'themeToggle' не знайдена в HTML!");
     }
 
-    //2. ПОШУК ПО ТАБЛИЦІ
-    const searchInput = document.getElementById('searchInput'); // Поле вводу для пошуку
-    
+// 2. ПОШУК ПО ТАБЛИЦІ (Спрощений)
+    const searchInput = document.getElementById('searchInput');
+
     if (searchInput) {
         searchInput.addEventListener('keyup', (e) => {
             const searchText = e.target.value.toLowerCase();
-            const tableRows = document.querySelectorAll('tbody tr'); // Шукаємо всі рядки таблиці
-            
-            tableRows.forEach(row => {
-                const rowText = row.textContent.toLowerCase();
-                if (rowText.includes(searchText)) {
-                    row.style.display = ''; // Показати
-                } else {
-                    row.style.display = 'none'; // Сховати
-                }
+            const rows = document.querySelectorAll('tbody tr'); // Всі рядки
+
+            rows.forEach(row => {
+                const isFound = row.textContent.toLowerCase().includes(searchText);
+                row.style.display = isFound ? '' : 'none';
             });
         });
+    } else {
+        console.error("Помилка: Поле з ID 'searchInput' не знайдено в HTML!");
     }
 
 // --- 3. ВАЛІДАЦІЯ ФОРМИ (JS перевірка) ---
@@ -68,28 +66,23 @@ document.addEventListener('DOMContentLoaded', () => {  // Чекаємо, пок
             const messageValue = document.getElementById('message').value.trim();
 
             // 3. ПЕРЕВІРКА (Валідація)
-            
-            // Перевірка імені (щоб було не менше 2 букв)
             if (nameValue.length < 3) {
                 alert("Помилка: Ім'я має бути не коротшим за 3 літери!");
-                return; // Зупиняємо функцію, далі код не піде
+                return; 
             }
 
-            // Перевірка пошти (чи є там "собачка" @ і крапка)
             if (!emailValue.includes('@') || !emailValue.includes('.')) {
                 alert("Помилка: Введіть коректний Email (наприклад, user@mail.com)!");
                 return;
             }
 
-            // Перевірка повідомлення (чи воно не пусте)
             if (messageValue === '') {
                 alert("Помилка: Текст повідомлення не може бути пустим!");
                 return;
             }
 
-            // 4. Якщо всі перевірки пройшли успішно:
             alert('Успіх! Ваше повідомлення перевірено і відправлено!');
-            form.reset(); // Очищаємо поля
+            form.reset(); 
         });
     } else {
         console.error("Помилка: Форма з ID 'contactForm' не знайдена в HTML!");
