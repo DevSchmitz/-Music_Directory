@@ -54,13 +54,44 @@ document.addEventListener('DOMContentLoaded', () => {  // Чекаємо, пок
         });
     }
 
-    // --- 3. ВАЛІДАЦІЯ ФОРМИ (Тільки на contact.html) ---
+// --- 3. ВАЛІДАЦІЯ ФОРМИ (JS перевірка) ---
     const form = document.getElementById('contactForm');
+    
     if (form) {
         form.addEventListener('submit', (e) => {
+            // 1. Зупиняємо стандартну відправку браузером
             e.preventDefault();
-            alert('Ваше повідомлення відправлено!');
-            form.reset();
+
+            // 2. Отримуємо значення з полів
+            const nameValue = document.getElementById('name').value.trim();
+            const emailValue = document.getElementById('email').value.trim();
+            const messageValue = document.getElementById('message').value.trim();
+
+            // 3. ПЕРЕВІРКА (Валідація)
+            
+            // Перевірка імені (щоб було не менше 2 букв)
+            if (nameValue.length < 3) {
+                alert("Помилка: Ім'я має бути не коротшим за 3 літери!");
+                return; // Зупиняємо функцію, далі код не піде
+            }
+
+            // Перевірка пошти (чи є там "собачка" @ і крапка)
+            if (!emailValue.includes('@') || !emailValue.includes('.')) {
+                alert("Помилка: Введіть коректний Email (наприклад, user@mail.com)!");
+                return;
+            }
+
+            // Перевірка повідомлення (чи воно не пусте)
+            if (messageValue === '') {
+                alert("Помилка: Текст повідомлення не може бути пустим!");
+                return;
+            }
+
+            // 4. Якщо всі перевірки пройшли успішно:
+            alert('Успіх! Ваше повідомлення перевірено і відправлено!');
+            form.reset(); // Очищаємо поля
         });
+    } else {
+        console.error("Помилка: Форма з ID 'contactForm' не знайдена в HTML!");
     }
 });
